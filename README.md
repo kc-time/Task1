@@ -37,6 +37,16 @@ Use `Post` method on postman with `Body` option `x-www-form-urlencoded`
 http://localhost:4000/users/login
 ```
 
+### Logout a user
+
+`POST /users/login`
+
+Use `Post` method on postman
+
+```js
+http://localhost:8000/users/logout
+```
+
 ### Create Tweet
 
 `POST /tweets`
