@@ -11,6 +11,10 @@ To get the Node server running locally:
 - `npm run start` to start the local server
 - Install Postman to play it
 
+# Unit Test
+
+- Run `npm run test` with Jest
+
 # API Guide
 
 ### Register a user
