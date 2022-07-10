@@ -1,4 +1,5 @@
 import express from "express";
+import routerUser from './routes/userRoutes';
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
@@ -28,6 +29,8 @@ app.use(sessions({
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+
+app.use('/users', routerUser)
 
 app.get('/', (req, res) => {
     res.sendStatus(200)
