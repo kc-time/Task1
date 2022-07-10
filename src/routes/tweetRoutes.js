@@ -12,4 +12,8 @@ router.get('/:tweetid', getTweetWithID)
 router.put('/:tweetid', updateTweet)
 router.delete('/:tweetid', deleteTweet);
 
+router.post('/:tweetid/like', likeTweet)
+router.post('/:tweetid/retweet', reTweet)
+router.post('/:tweetid/thread', threadTweet)
+
 export default router;

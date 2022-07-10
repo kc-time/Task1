@@ -1,5 +1,6 @@
 import express from "express";
 import routerUser from './routes/userRoutes';
+import routerTweet from './routes/tweetRoutes';
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
@@ -30,6 +31,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
+app.use('/tweets', routerTweet)
 app.use('/users', routerUser)
 
 app.get('/', (req, res) => {
